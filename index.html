@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>League of Legends</title>
+		<link data-react-helmet="true" rel="icon" href="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/pt-br/production/pt-br/static/favicon-0cf29ce019f7cd1e7b24f85ab6ff97da.ico">
+		
+		  
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+	
+		<header>
+			<img class="logo" src="../img/riot-logo2.png">
+			<ul class="navigation">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Celular</a></li>
+				<li><a href="#">Campeões</a></li>
+				<li><a href="#">Contato</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+		</header>
+
+		<section class="banner" id="banner">
+			<div class="content">
+				<img class="logo2" src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/pt-br/production/pt-br/static/logo-1200-589b3ef693ce8a750fa4b4704f1e61f2.png">
+				<form method="get" action="https://signup.br.leagueoflegends.com/pt/signup/redownload?page_referrer=index">
+				<button type="submit" class="button"><span>Jogue Grátis</span></button>
+			</form>
+			</div>
+		</section>	
+		
+		<section class="celular" id="celular">
+			<div class="materia">
+				<div class="col">
+				<h2>Jogue também no celular</h2>
+				<video class="video" autoplay loop >
+					<source src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/harbinger-l10-website/pt-br/production/pt-br/static/hero-0632cbf2872c5cc0dffa93d2ae8a29e8.webm" type="video/webm">
+				</div>
+				<div class="col">
+					<div class="text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis congue justo, sed condimentum massa eleifend nec. Praesent in accumsan odio. Donec a velit et arcu vehicula dictum. Proin luctus et ex at dignissim. Vivamus pharetra tellus sed facilisis malesuada. Nunc auctor lacus vel libero luctus, et pellentesque nibh venenatis. Mauris pulvinar diam vel lacus varius, non tincidunt nulla mollis. Morbi fringilla tempus felis, id fermentum sapien scelerisque id.</p>
+					</div>
+				</div>	
+			</div>
+			
+
+		</section>		
+		<section>
+			<div>
+				<img class="logo" src="img/yasuo.png">
+			</div>
+		</section>	
+		
+		<footer>
+			<div class="textofinal">
+				<p>Copyright 2021 <a href="https://www.riotgames.com/pt-br">Riot Games</a>. Todos os Direitos Reservados</p>
+			</div>
+		</footer>
+
+			<script type="text/javascript">
+				window.addEventListener('scroll', function(){
+					const header = document.querySelector('header');
+					header.classList.toggle("sticky", window.scrollY > 0);
+				});
+			</script>
+				
+			
+	</body>
+</html>
