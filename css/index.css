@@ -79,7 +79,9 @@ header .logo
 
 }
 
-
+.celular{
+	background-color: rgb(228, 228, 149);
+}
 
 header.sticky .logo  
 {
@@ -225,6 +227,7 @@ section
     object-fit: cover;
 	transform: scale(1);
   	animation: pulse-black infinite;
+	transition: 4.5s; 
 }
 
 .video:hover
@@ -262,7 +265,7 @@ h2:hover
     position: relative;
     width: 50%;
     font-size: 1.5em;
-	
+	 
 }
 
 .materia .col p
@@ -276,271 +279,171 @@ h2:hover
 	
 }
 
-.title
+.title /* vai dar merda*/
 {
 	
-	font-weight: bold;
-	font-size: 2.5em;
+    width: 14%;
+    position: absolute;
+	padding-top: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5em;
 	
-	width: 100%;
+	
 }
 
-
-
-
-
-
-
-
-
-
-
-/*footer*/
-
-
-.textofinal
-{	
-	top: 0;
-    padding: 8px 40px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.textofinal p
+.btn
 {
-    color:#333;
-}
-
-.textofinal a
-{
-    color:#ff0101;
-    font-weight: 500;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    display: flex;
+	flex-direction: row;
+    padding: 10px 50px;
+    margin-top: 20px;
+   /*  text-transform: uppercase; */
     text-decoration: none;
-	
-}
-
-
-@keyframes pulse-black {
-	0% {
-	  transform: scale(0.95);
-	  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-	}
-	
-	70% {
-	  transform: scale(1);
-	  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
-	
-	100% {
-	  transform: scale(0.95);
-	  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-#pagina
-{
-	color: #ffffff;
-	background-color: rgba(77,77,77,1);
-	margin: 0;
-	
-
-}
-
-
-
-h1{
-	margin: 0;
-	padding-top: 100px;
-	font-size: 100px;
-}
-
-.logo2{
-	width: 560px;
-	align-items: center;
-	
-}
-
-.logo2{
-	width: 100px;
-	position: relative;
-	display: inline-block;
-	align-items: initial;
-	justify-content: left;
-	margin: 0;
-	top: 0;
-	bottom: 0;
-	margin-right: 50px;
-	padding-top: 10px;
-	border: 1px solid;
-}
-
-.logo2:hover {
-	color: rgb(14, 189, 23);
-}
-header {
-	top: 0;
-	width: 100%;
-	height: 490px;
-	background-color: white;
-	color: black;
+    transition: 0.5s;
 	text-align: center;
-	background-image: url('img/darius.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: initial;
-	background-size: cover;
-	transition: 5s;
-}
-
-nav
-{	
-	top: 0;
-	position: sticky;
-	background-color: black;
-	padding-left: 240px ;
-	height: 50px;
+	border: 2px solid blue;
+	
 	
 }
 
-li
-{	
-	height: 2px;
-	display: inline-block;
-	position: static;
-	text-decoration: none;
-	margin: 10px;
-	padding: 40px;
-	font-weight: bold;
-	font-size: 23px;
-	border: 1px solid;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 50px;
-	
-}
-
-a
+.btn:hover
 {
-	display: inline;
-	text-decoration: none;
-	color: white;
-	justify-content: center;
-	text-align: center;
-	padding-top: 0;
-	
+    letter-spacing: 0px;
+	padding: 20px 50px;
 	
 }
 
 
-a:hover
+
+
+
+@media (max-width: 991px)
 {
-	color: #c51414;
-
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li
+    {
+        margin-left: 0
+    }
+    header .navigation li a
+    {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.jpg);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url(/img/menu-close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle
+    {
+        filter: invert(1);
+    }
+    section
+    {
+        padding: 20px;
+    }
+    .banner .content h2
+    {
+        font-size: 3m;
+        color: #fff;
+    }
+    .row
+    {
+        flex-direction: column;
+    }
+    .row .col150
+    {
+        position: relative;
+        width: 100%;
+        text-align: justify;
+    }
+    .row .col150 .imgBx
+    {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content
+    {
+        margin-top: 20px;
+    }
+    .menu .content .box
+    {
+        margin: 10px; 
+    }
+    .menu .content .box .imgBx
+    {
+        height: 299px;
+    }
+    .title
+    {
+        text-align: center;
+    }
+    .titleText
+    {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .feedbacks .content .box
+    {
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactForm
+    {
+        padding: 65px 31px;
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
 }
 
-button
-{	
-	display: flex;
-	position: relative;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
- 	border-radius: 4px;
-  	background-color: #c51414;
-  	border: 1px bold;
-  	color: #FFFFFF;
-  	text-align: center;
-  	font-size: 28px;
-  	padding: 20px;
-  	width: 300px;
-  	transition: all 0.5s;
-  	cursor: pointer;
-  	margin: 50px;
-	left: 36%;
-	border-radius: 50px;
-	
+@media (max-width: 480px)
+{   
+    .banner .content h2
+    {
+    font-size: 2.2em;
+    color: #fff;
+    }
 }
-
-button:hover
-{
-	margin-right: 20px;	
-}
-
-.button span {
-  	cursor: pointer;
-  	display: inline-block;
-  	position: relative;
-  	transition: 0.5s;
-	
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -300px;
-  transition: 0.5s;
-}
-
-
-.button:hover span {
-  	padding-right: 70px;
-  	margin-left: 2px;
-}
-
-.button:hover span:after {
-  	opacity: 1;
-  	right: 0;
-}
-
-main {
-	top: 0;
-}
-*/
