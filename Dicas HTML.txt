@@ -1,0 +1,14 @@
+DICAS HTML
+
+https://www.maujor.com/tutorial/css3-filters.php
+https://www.w3schools.com/colors/colors_hsl.asp
+https://www.w3schools.com/css/css_positioning.asp
+https://www.w3schools.com/css/css_display_visibility.asp
+https://www.w3schools.com/css/css_image_gallery.asp
+https://www.w3schools.com/css/css_image_sprites.asp
+https://www.w3schools.com/css/css_website_layout.asp
+https://www.w3schools.com/css/css_grid_container.asp
+https://www.w3schools.com/cssref/pr_grid-area.asp
+https://www.w3schools.com/cssref/css_animatable.asp
+https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/                         <---LEIA-É-IMPORTANTE
+https://www.compart.com/en/unicode/category/Pf
