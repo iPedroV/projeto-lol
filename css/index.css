@@ -321,10 +321,20 @@ section
   	
 }
 
+.row .col .spinner 
+{
+    height: 300px;
+    width: 300px;
+    animation: spinner 1.7s linear infinite;
+}
 
 
-
-
+@keyframes spinner
+{
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 
 

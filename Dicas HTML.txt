@@ -12,3 +12,4 @@ https://www.w3schools.com/cssref/pr_grid-area.asp
 https://www.w3schools.com/cssref/css_animatable.asp
 https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/                         <---LEIA-É-IMPORTANTE
 https://www.compart.com/en/unicode/category/Pf
+https://fontawesome.com/v5.15/icons/circle-notch?style=solid
