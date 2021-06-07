@@ -277,7 +277,7 @@ section
 {
     position: relative;
     width: 100%;
-    min-height: 520px; /*Altura da imagem*/
+    min-height: 670px; /*Altura da imagem*/
     /*height: 100%;*/
 }
 
@@ -325,7 +325,10 @@ section
     height: 300px;
     width: 300px;
     animation: spinner 1.7s linear infinite;
+    
 }
+
+svg
 
 
 
