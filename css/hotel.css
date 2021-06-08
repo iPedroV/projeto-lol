@@ -7,25 +7,22 @@ body{
 
 }
 
-.texto1
+.texto
 {
     text-align: center;
     color: white;
     font-size: 35px;
 }
 
-.texto2
-{
-    display: block;
-    background: rgb(0, 0, 0);
+.caixa{
+    text-align: center;
+    background-color: black;
     color: red;
     width: 20%;
-    height: 420px;
-    align-items: center;
-    display: inline-table;
-    text-align: center;
-    margin-left: 650px;
     border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
 }
 
 .button{
