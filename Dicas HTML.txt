@@ -13,3 +13,5 @@ https://www.w3schools.com/cssref/css_animatable.asp
 https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/                         <---LEIA-É-IMPORTANTE
 https://www.compart.com/en/unicode/category/Pf
 https://fontawesome.com/v5.15/icons/circle-notch?style=solid
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_setinterval2
+https://forum.imasters.com.br/topic/524471-fazer-um-clique-autom%C3%A1tico-em-um-bot%C3%A3o-depois-de-8-segundos/
