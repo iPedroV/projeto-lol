@@ -15,17 +15,25 @@ resultado.textContent = hotel.reservados;
 
 
 function calcularReserva() {
-    resultado = hotel.reservados ++;
-    resultado2 = hotel.quartos --;
-    if(resultado<50){
-        document.getElementById('reservaQuartoHotel').textContent = resultado;
-        document.getElementById('quartoHotel').textContent = resultado2;
-    }else{
-
-        document.getElementById('quartoHotel').textContent = 'Não há mais vagas';
-        document.getElementById('reservaQuartoHotel').textContent = 'Todos os quartos estão reservados!';
+    
+    for(var i=0;i<1;i++){
+        
+        resultado = hotel.reservados ++;
+        resultado2 = hotel.quartos --;
+        if(resultado<50){
+            document.getElementById('reservaQuartoHotel').textContent = resultado;
+            document.getElementById('quartoHotel').textContent = resultado2;
+        }else{
+            
+            document.getElementById('quartoHotel').textContent = 'Não há mais vagas';
+            document.getElementById('reservaQuartoHotel').textContent = 'Todos os quartos estão reservados!';
+        }
     }
+    window.setTimeout(function(){
+        document.getElementById('botao').click();
+    }, 1000);
 }
+
 
 
 
