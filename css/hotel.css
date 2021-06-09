@@ -22,19 +22,31 @@ body{
     border-radius: 50px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 10px;
+    padding:  20px;
+    
 }
 
 .button{
     width: 70%;
-    height: 20%;
+    height: 50%;
+    padding-bottom: 30px;
     background-color: red;
     font-size: 1.1em;
-    border-radius: 50px;
+    border-radius: 10px;
     color: white;
+    text-align: center;
 }
 
 h3{
     color: white;
     font-size: 30px;
+}
+
+.button span{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: -20px;   
 }

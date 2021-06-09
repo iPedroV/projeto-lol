@@ -7,21 +7,28 @@ resultado.textContent = hotel.nome;
 
 hotel.quartos = 30;
 resultado = document.getElementById('quartoHotel');
-resultado.textContent += hotel.quartos;
+resultado.textContent = hotel.quartos;
 
-hotel.reservados = 20;//bug
+hotel.reservados = 20;
 resultado = document.getElementById('reservaQuartoHotel');
-resultado.textContent += hotel.reservados;
+resultado.textContent = hotel.reservados;
 
-function calcularReserva(quartosReservados) {
-    var i = 0;
-    for (i = 0; i < 10; i++) {
-        var reserva = quartosReservados + 1;//bug
-        
+
+function calcularReserva() {
+    resultado = hotel.reservados ++;
+    resultado2 = hotel.quartos --;
+    if(resultado<50){
+        document.getElementById('reservaQuartoHotel').textContent = resultado;
+        document.getElementById('quartoHotel').textContent = resultado2;
+    }else{
+
+        document.getElementById('quartoHotel').textContent = 'Não há mais vagas';
+        document.getElementById('reservaQuartoHotel').textContent = 'Todos os quartos estão reservados!';
     }
-    resultado = document.getElementById('reservaQuartoHotel');
-    return resultado.textContent = reserva;
 }
+
+
+
 
 resultado = calcularReserva(hotel.reservados);
 //resultado = document.getElementById('reservarQuarto')
@@ -37,5 +44,5 @@ var hotel = {
 
 */
 
-document.write('aalooo '+ reserva);
+document.write('aalooo ' + reserva);
 
