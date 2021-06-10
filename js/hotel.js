@@ -32,7 +32,7 @@ function calcularReserva() {
     }
     window.setTimeout(function(){
         document.getElementById('botao').click();
-    }, 1000);
+    }, 10000);
 }
 
 
@@ -48,12 +48,12 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("data").innerHTML = days + "d " + hours + "h "
+  document.getElementById("data").textContent = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("data").innerHTML = "Hora de ir embora";
+    document.getElementById("data").textContent = "Hora de ir embora";
   }
 }, 1000);
 
@@ -88,5 +88,4 @@ var hotel = {
 
 */
 
-document.write('aalooo ' + reserva);
 
