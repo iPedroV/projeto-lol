@@ -24,9 +24,10 @@ function calcularReserva() {
             document.getElementById('reservaQuartoHotel').textContent = resultado;
             document.getElementById('quartoHotel').textContent = resultado2;
         }else{
-            
+            clearInterval(x);
             document.getElementById('quartoHotel').textContent = 'Não há mais vagas';
             document.getElementById('reservaQuartoHotel').textContent = 'Todos os quartos estão reservados!';
+            document.getElementById("data").textContent = "ESGOTADO";
         }
     }
     window.setTimeout(function(){
@@ -35,7 +36,7 @@ function calcularReserva() {
 }
 
 
-var countDownDate = new Date("Jun 10, 2021 11:30:25").getTime();
+var countDownDate = new Date("Jun 10, 2021 11:57:25").getTime();
 var x = setInterval(function() {
 
   var now = new Date().getTime();
@@ -52,25 +53,21 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("data").innerHTML = "EXPIRED";
+    document.getElementById("data").innerHTML = "Hora de ir embora";
   }
 }, 1000);
 
 /*
 var data = new Date();
-
 data.getDay()
-4
 var diaDaSemana = ['Domingo','Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 
 diaDaSemana[data.getDay()];
 
 data.getMonth();
-5
 var mes = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun','Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
 
 mes[data.getMonth()];
-
 
 var dataDeHoje = data.getDate() + '/' + mes[data.getMonth()] + '/' + data.getFullYear();
 document.getElementById('data').textContent = dataDeHoje
