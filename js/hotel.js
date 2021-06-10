@@ -35,6 +35,25 @@ function calcularReserva() {
 }
 
 
+var data = new Date();
+undefined
+data 
+
+data.getDay()
+4
+var diaDaSemana = ['Domingo','Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+undefined
+diaDaSemana[data.getDay()];
+"Quinta"
+data.getMonth();
+5
+var mes = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun','Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+undefined
+mes[data.getMonth()];
+"Jun"
+
+var dataDeHoje  = data.getDate() + '/' + mes[data.getMonth()] + '/' + data.getFullYear();
+document.getElementById('data').textContent = dataDeHoje
 
 
 
