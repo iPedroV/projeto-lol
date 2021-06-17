@@ -182,13 +182,31 @@ button
 	border-radius: 50px;
 	margin-top: 70px;
 	transform: scale(1);
-  	animation: pulse 2s infinite;
+  	
+    animation: colorir 2.5s infinite;
     
 }
 
 button:hover
 {
-	margin-right: 20px;	
+	margin-right: 20px;
+   
+    transition:  10.5s;	
+}
+
+@keyframes colorir{
+    0%{
+        background: #013cff;
+        transform: scale(0.95);
+    }
+    70%{
+        background: #0178ff;
+        transform: scale(1);
+    }
+    100%{
+        background: #013cff; 
+        transform: scale(0.95);
+    }
 }
 
 .button span {
